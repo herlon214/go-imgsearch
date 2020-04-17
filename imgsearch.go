@@ -69,7 +69,7 @@ func SearchImage(imageA image.Image, imgB image.Image) BestMatch {
 	}
 
 	// Convert the confidence score to be between 0 and 1
-	bestMatch.Confidence = math.Abs((bestMatch.Confidence/16776705)*100 - 100)
+	bestMatch.Confidence = math.Abs((bestMatch.Confidence / 16776705) - 1)
 
 	return bestMatch
 

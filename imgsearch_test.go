@@ -24,7 +24,7 @@ func TestSearchImage(t *testing.T) {
 	result := SearchImage(imgA, imgB)
 	assert.Equal(t, 263, result.Y)
 	assert.Equal(t, 133, result.X)
-	assert.Equal(t, 95.54177759180563, result.Confidence)
+	assert.Equal(t, 0.9554177759180562, result.Confidence)
 }
 
 func loadImage(filename string) image.Image {
